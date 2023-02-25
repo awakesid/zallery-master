@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
+}
+.profilecard{
+    padding: 1.7rem 0 0 0;
+    margin-bottom:1.8rem ;
+}
+
+.profile{
+      
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 100vw;
+      justify-content: center;
+      align-items: center;  
+  }
+.profile img{
+    min-width: 4rem;
+    max-width: 6.5rem;
+    border-radius: 1rem;
+}
+.profile h3{
+    margin-top: 0.6rem;
+}
+h3{
+    font-weight: 600;
+    font-size: medium;
+    color: #4E5150;
+}
+p{
+    font-size: smaller;
+    color: #A9A9A9;
+}
+.followers{
+    display: flex;
+    justify-content: center;
+
+}
+
+.followers div{
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.followers div h3{
+    position: absolute;
+    font-size: small;
+    top: 6px;
+}
+.followers div p{
+    position: absolute;
+    font-size: small;
+    bottom: 6px;
+    color: #BDBDBD;
+}
+.gallery{
+    height: 25rem;
+    
+    display: flex;
+    justify-content: center;
+}
+.photos{
+    height: 100%;
+    width: 95%;
+    max-width: 43rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "f s s"
+    "t t ft"
+    "th six ft";
+    grid-gap: 0.7rem;
+}
+.photos div{
+    border-radius: 10px;
+    background-position:center;
+    background-size: cover;
+
+}
+.first{
+    grid-area: f;
+    background-image: url(images/photo1.png);
+    background-position:center;
+    background-size: contain;
+}
+.second{
+    grid-area: s;
+    background-image: url(images/photo2.png);
+    
+    
+}
+.third{
+    grid-area: t;
+    background-image: url(images/photo3.png);
+    
+}
+.fourth{
+    grid-area: ft;
+    background-image: url(images/photo_4.png);
+   
+}
+.fifth{
+    grid-area: th;
+    background-image: url(images/photo5.png);
+    
+}
+.sixth{
+    grid-area: six;
+    background-image: url(images/photo6.png);
+    
+}
+@media(min-width:567px){
+    .gallery{
+        height: 35rem;
+    }
+}
+@media(min-width: 767px){
+    .gallery{
+        height: 40rem;
+    }
+}
+@media(min-width: 1024px){
+    .gallery{
+        height: 44rem;
+    }
+    .photos{
+        max-width: 46rem;
+    }
+    .profile img{
+        max-width: 7rem;
+    }
+}
+.attribution{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 1rem;
+}
+.block{
+    width: 100%;
+    height: 100px;
+}
+
+
+ 
